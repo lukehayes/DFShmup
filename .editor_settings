@@ -1,0 +1,134 @@
+{
+  :bundle {
+    :build-report false
+    :contentless false
+    :debug-symbols true
+    :liveupdate false
+    :output-directory "/home/luke/Desktop/TEST"
+    :texture-compression "enabled"
+    :variant "release"
+    :windows {
+      :platform "x86_64-win32"
+    }
+  }
+  :workflow {
+    :recent-files [
+      [
+        "/README.md"
+        :html
+      ]
+      [
+        "/main/atlas.atlas"
+        :scene
+      ]
+      [
+        "/builtins/render/default.render_script"
+        :code
+      ]
+      [
+        "/builtins/render/default.render"
+        :cljfx-form-view
+      ]
+      [
+        "/builtins/render/default.display_profiles"
+        :cljfx-form-view
+      ]
+      [
+        "/assets/images/tsrcShip.tilesource"
+        :scene
+      ]
+      [
+        "/main/player/sprPlayer.sprite"
+        :scene
+      ]
+      [
+        "/main/windowBorder.gui"
+        :scene
+      ]
+      [
+        "/main/windowBorder.go"
+        :scene
+      ]
+      [
+        "/main/renderTarget.render_target"
+        :cljfx-form-view
+      ]
+      [
+        "/main/render.render"
+        :cljfx-form-view
+      ]
+      [
+        "/main/shader.glsl"
+        :code
+      ]
+      [
+        "/main/freag.fp"
+        :code
+      ]
+      [
+        "/builtins/materials/sprite.fp"
+        :code
+      ]
+      [
+        "/builtins/materials/sprite.vp"
+        :code
+      ]
+      [
+        "/main/myLabel.label"
+        :scene
+      ]
+      [
+        "/main/myParticles.particlefx"
+        :scene
+      ]
+      [
+        "/main/player/player.script"
+        :code
+      ]
+      [
+        "/assets/images/atlas.atlas"
+        :scene
+      ]
+      [
+        "/main/shots/basic.go"
+        :scene
+      ]
+      [
+        "/main/player/player.go"
+        :scene
+      ]
+      [
+        "/game.project"
+        :cljfx-form-view
+      ]
+      [
+        "/main/objGame.go"
+        :scene
+      ]
+      [
+        "/input/game.input_binding"
+        :cljfx-form-view
+      ]
+      [
+        "/main/shots/scrBasicShot.script"
+        :code
+      ]
+      [
+        "/main/shots/ShotFactory.factory"
+        :cljfx-form-view
+      ]
+      [
+        "/main/scrMain.script"
+        :code
+      ]
+      [
+        "/main/main.collection"
+        :scene
+      ]
+      [
+        "/main/player/scrPlayer.script"
+        :code
+      ]
+    ]
+  }
+}

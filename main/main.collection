@@ -1,0 +1,27 @@
+name: "main"
+instances {
+  id: "player"
+  prototype: "/main/player/player.go"
+  position {
+    x: 154.0
+    y: 318.0
+  }
+  scale3 {
+    x: 4.0
+    y: 4.0
+    z: 4.0
+  }
+}
+instances {
+  id: "windowBorder"
+  prototype: "/main/windowBorder.go"
+}
+instances {
+  id: "basic"
+  prototype: "/main/shots/objBasicShot.go"
+  position {
+    x: 231.0
+    y: 317.0
+  }
+}
+scale_along_z: 0
