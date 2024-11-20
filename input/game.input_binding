@@ -16,7 +16,7 @@ key_trigger {
 }
 key_trigger {
   input: KEY_SPACE
-  action: ""
+  action: "shoot"
 }
 key_trigger {
   input: KEY_W
