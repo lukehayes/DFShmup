@@ -9,22 +9,10 @@ function init(self)
 end
 
 function update(self, dt)
-	if self.can_shoot then
-		factory.create('#factory', go.get_position())
-		self.can_shoot = false
-	end
 
 	if self.can_shoot == false then
-		self.shoot_timer = self.shoot_timer + dt
-
-		if self.shoot_timer > self.FireRate then
-			self.can_shoot = true
-		end
 	end
-
-	print(self.shoot_timer)
 end
-
 
 function on_input(self, action_id, action)
 	local pos = go.get_position()
@@ -40,11 +28,31 @@ function on_input(self, action_id, action)
 	end
 
 	if action_id == hash('shoot') then
-
-		factory.create('#factory', pos)
-
-		print("Shooting")
+		msg.post(".", "shoot")
 	end
 
 	go.set_position(pos)
+end
+
+function shoot_cooldown(self)
+	if self.can_shoot == false then
+		self.shoot_timer = self.shoot_timer + dt
+
+		if self.shoot_timer > self.FireRate then
+			self.can_shoot = true
+		end
+	end
+end
+
+function shoot(self)
+	if self.can_shoot then
+		factory.create('#factory', go.get_position())
+		-- self.can_shoot = false
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash('shoot') then
+		shoot(self)
+	end
 end
