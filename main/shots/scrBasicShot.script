@@ -1,4 +1,4 @@
-go.property("speed", 1)
+go.property("shot_speed", 20)
 
 function init(self)
 	
@@ -12,7 +12,7 @@ function update(self, dt)
 
 	local pos = go.get_position()
 
-	pos.x = pos.x + self.speed
+	pos.x = pos.x + self.shot_speed
 
 	go.set_position(pos)
 end

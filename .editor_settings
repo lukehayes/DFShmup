@@ -2,13 +2,20 @@
   :bundle {
     :build-report false
     :contentless false
-    :debug-symbols true
+    :debug-symbols false
     :liveupdate false
-    :output-directory "/home/luke/Desktop/TEST"
+    :output-directory "/home/luke/Desktop/GAME"
     :texture-compression "enabled"
     :variant "release"
     :windows {
       :platform "x86_64-win32"
+    }
+  }
+  :run {
+    :simulated-resolution {
+      :custom true
+      :height 1080
+      :width 1920
     }
   }
   :workflow {
@@ -86,20 +93,8 @@
         :code
       ]
       [
-        "/assets/images/atlas.atlas"
-        :scene
-      ]
-      [
         "/main/shots/basic.go"
         :scene
-      ]
-      [
-        "/main/player/player.go"
-        :scene
-      ]
-      [
-        "/game.project"
-        :cljfx-form-view
       ]
       [
         "/main/objGame.go"
@@ -110,10 +105,6 @@
         :cljfx-form-view
       ]
       [
-        "/main/shots/scrBasicShot.script"
-        :code
-      ]
-      [
         "/main/shots/ShotFactory.factory"
         :cljfx-form-view
       ]
@@ -122,12 +113,32 @@
         :code
       ]
       [
-        "/main/main.collection"
+        "/main/shots/objBasicShot.go"
         :scene
+      ]
+      [
+        "/main/shots/scrBasicShot.script"
+        :code
       ]
       [
         "/main/player/scrPlayer.script"
         :code
+      ]
+      [
+        "/game.project"
+        :cljfx-form-view
+      ]
+      [
+        "/main/main.collection"
+        :scene
+      ]
+      [
+        "/main/player/player.go"
+        :scene
+      ]
+      [
+        "/assets/images/atlas.atlas"
+        :scene
       ]
     ]
   }

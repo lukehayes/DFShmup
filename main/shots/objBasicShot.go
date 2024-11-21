@@ -2,7 +2,7 @@ components {
   id: "scrBasicShot"
   component: "/main/shots/scrBasicShot.script"
   properties {
-    id: "speed"
+    id: "shot_speed"
     value: "10.0"
     type: PROPERTY_TYPE_NUMBER
   }
@@ -17,4 +17,9 @@ embedded_components {
   "  texture: \"/assets/images/atlas.atlas\"\n"
   "}\n"
   ""
+  scale {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
 }

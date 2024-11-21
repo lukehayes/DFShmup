@@ -2,8 +2,8 @@ components {
   id: "player"
   component: "/main/player/scrPlayer.script"
   properties {
-    id: "Speed"
-    value: "10.0"
+    id: "FireRate"
+    value: "0.4"
     type: PROPERTY_TYPE_NUMBER
   }
 }
